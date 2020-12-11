@@ -1205,4 +1205,7 @@ html, body{overflow: hidden;}
   #toolbar{
     display: none;
   }
+  body{
+       display: none;
+  }
 }
