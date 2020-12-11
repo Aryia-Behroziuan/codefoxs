@@ -1,0 +1,723 @@
+<html lang="en"><head>
+     <meta charset="utf-8">
+     <title>CodeFoxs</title>
+ 
+     <!-- SEO Meta Tags-->
+     <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+     <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+     <meta name="author" content="Createx Studio">
+ 
+     <!-- Viewport-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Favicon and Touch Icons-->
+     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png">
+     <link rel="manifest" href="../../assets/img/site.webmanifest">
+     <link rel="mask-icon" color="#5bbad5" href="../../assets/img/safari-pinned-tab.svg">
+     <meta name="msapplication-TileColor" content="#766df4">
+     <meta name="theme-color" content="#ffffff">
+ 
+     <!-- Vendor Styles-->
+     <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/vendor/lightgallery.js/dist/css/lightgallery.min.css">
+     <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/vendor/simplebar/dist/simplebar.min.css">
+     <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/vendor/tiny-slider/dist/tiny-slider.css">
+ 
+     <!-- Main Theme Styles + Bootstrap-->
+     <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/css/demo/online-courses/theme.min.css">
+     
+     <!-- Page loading styles-->
+     <style>
+       .cs-page-loading {
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         -webkit-transition: all .4s .2s ease-in-out;
+         transition: all .4s .2s ease-in-out;
+         background-color: #fff;
+         opacity: 0;
+         visibility: hidden;
+         z-index: 9999;
+       }
+       .cs-page-loading.active {
+         opacity: 1;
+         visibility: visible;
+       }
+       .cs-page-loading-inner {
+         position: absolute;
+         top: 50%;
+         left: 0;
+         width: 100%;
+         text-align: center;
+         -webkit-transform: translateY(-50%);
+         transform: translateY(-50%);
+         -webkit-transition: opacity .2s ease-in-out;
+         transition: opacity .2s ease-in-out;
+         opacity: 0;
+       }
+       .cs-page-loading.active > .cs-page-loading-inner {
+         opacity: 1;
+       }
+       .cs-page-loading-inner > span {
+         display: block;
+         font-size: 1rem;
+         font-weight: normal;
+         color: #787a80;
+       }
+       .cs-page-spinner {
+         display: inline-block;
+         width: 2.75rem;
+         height: 2.75rem;
+         margin-bottom: .75rem;
+         vertical-align: text-bottom;
+         background-color: #cfcfd1; 
+         border-radius: 50%;
+         opacity: 0;
+         -webkit-animation: spinner .75s linear infinite;
+         animation: spinner .75s linear infinite;
+       }
+       @-webkit-keyframes spinner {
+         0% {
+           -webkit-transform: scale(0);
+           transform: scale(0);
+         }
+         50% {
+           opacity: 1;
+           -webkit-transform: none;
+           transform: none;
+         }
+       }
+       @keyframes spinner {
+         0% {
+           -webkit-transform: scale(0);
+           transform: scale(0);
+         }
+         50% {
+           opacity: 1;
+           -webkit-transform: none;
+           transform: none;
+         }
+       }
+     </style>
+ 
+     <!-- Page loading scripts-->
+     <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WKV3GT5"></script><script>
+       (function () {
+         window.onload = function () {
+           var preloader = document.querySelector('.cs-page-loading');
+           preloader.classList.remove('active');
+           setTimeout(function () {
+             preloader.remove();
+           }, 2000);
+         };
+       })();
+     </script>
+ 
+     <!-- Demo switcher off-canvas toggle styles -->
+     <style>
+       .cs-demo-switcher {
+         position: fixed;
+         display: block;
+         top: 50%;
+         right: 1rem;
+         z-index: 100;
+       }
+       .cs-demo-switcher-inner {
+         width: 3rem;
+         height: 3rem;
+         border: 1px solid #e5e8ed;
+         border-radius: 50%;
+         background-color: #fff;
+         color: #1e212c;
+         font-size: 1.25rem;
+         line-height: 3rem;
+         text-align: center;
+         text-decoration: none;
+         box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
+       }
+     </style>
+ 
+     <!-- Google Tag Manager -->
+     <script>
+       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+       })(window,document,'script','dataLayer','GTM-WKV3GT5');
+     </script>
+   <style></style><style></style><style></style><style type="text/css" id="jarallax-clip-0">#jarallax-container-0 {
+             clip: rect(0 1089.5999755859375px 754.4000244140625px 0);
+             clip: rect(0, 1089.5999755859375px, 754.4000244140625px, 0);
+             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }</style><style type="text/css" id="jarallax-clip-1">#jarallax-container-1 {
+             clip: rect(0 1089.5999755859375px 856.0750122070312px 0);
+             clip: rect(0, 1089.5999755859375px, 856.0750122070312px, 0);
+             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }</style><style type="text/css" id="jarallax-clip-2">#jarallax-container-2 {
+             clip: rect(0 1089.5999755859375px 1408.375px 0);
+             clip: rect(0, 1089.5999755859375px, 1408.375px, 0);
+             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }</style><meta http-equiv="origin-trial" content="A+lrru9joWsVsv/P3X+dopx0K3Kqqa6TWuRhy8lfco2FWWUMUnhmKWF6G2lVMHBKPbvghnI7kjiVh2s5G6NhmQUAAACOeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGVhZHNlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjA4MzIyMTU3LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="https://www.googleadservices.com/pagead/conversion/717446051/?random=1607544266216&amp;cv=9&amp;fst=1607544266216&amp;num=1&amp;value=0&amp;label=F-BmCKDx2sUBEKO3jdYC&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_his=9&amp;u_tz=210&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wgbu0&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fcreatex.vercel.app%2Fhtml%2Fonline-courses%2Findex.html&amp;ref=https%3A%2F%2Fcreatex.vercel.app%2Fhtml%2Fconstruction%2Findex.html&amp;tiba=Createx%20%7C%20Online%20Courses%20-%20Home&amp;hn=www.googleadservices.com&amp;bttype=purchase&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+ 
+   <!-- Body-->
+   <body>
+     
+     <!-- Google Tag Manager (noscript)-->
+     <noscript>
+       <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+     </noscript>
+ 
+     <!-- Page loading spinner-->
+     
+ 
+     <!-- Main content-->
+     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+     <main class="cs-page-wrapper position-relative">
+ 
+ 
+       <!-- Demo switcher off-canvas -->
+       <div id="demo-switcher" class="cs-offcanvas cs-offcanvas-right">
+         <div class="cs-offcanvas-cap d-block border-bottom">
+           <div class="d-flex justify-content-between align-items-center">
+             <h2 class="h5 mb-0">Choose Demo</h2>
+             <button class="close mr-n1" type="button" data-dismiss="offcanvas" aria-label="Close">
+               <span class="h3 font-weight-normal mb-0" aria-hidden="true">×</span>
+             </button>
+           </div>
+           <div class="d-flex pt-3">
+             <a href="../../index.html" class="btn btn-sm btn-outline-secondary btn-block my-0 mr-2">
+               <i class="cxi-home font-size-base mr-1"></i>
+              Main Page
+             </a>
+             <a href="../components/typography.html" class="btn btn-sm btn-outline-secondary btn-block my-0">
+               <i class="cxi-files font-size-base mr-1"></i>
+              Docs / UI Kit
+             </a>
+           </div>
+         </div>
+         <div class="cs-offcanvas-body pt-4 pb-3" data-simplebar="init" data-simplebar-auto-hide="true"><div class="simplebar-wrapper" style="margin: -24px -24px -16px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 24px 24px 16px;">
+           <a href="../creative-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="../../assets/img/demo-switcher/creative-agency.jpg" class="d-block rounded-top mb-2" alt="Creative Agency">
+             <h6 class="mb-0 pt-1 text-center">Creative Agency</h6>
+           </a>
+           <a href="../ecommerce/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="../../assets/img/demo-switcher/ecommerce.jpg" class="d-block rounded-top mb-2" alt="E-Commerce">
+             <h6 class="mb-0 pt-1 text-center">E-Commerce</h6>
+           </a>
+           <a href="../construction/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="../../assets/img/demo-switcher/construction.jpg" class="d-block rounded-top mb-2" alt="Construction Bureau">
+             <h6 class="mb-0 pt-1 text-center">Construction Bureau</h6>
+           </a>
+           <a href="../seo-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="../../assets/img/demo-switcher/seo-agency.jpg" class="d-block rounded-top mb-2" alt="SEO &amp; Marketing Agency">
+             <h6 class="mb-0 pt-1 text-center">SEO &amp; Marketing Agency</h6>
+           </a>
+           <a href="../online-courses/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="../../assets/img/demo-switcher/online-courses.jpg" class="d-block rounded-top mb-2" alt="Online Courses">
+             <h6 class="mb-0 pt-1 text-center">Online Courses</h6>
+           </a>
+         </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1330px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 216px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+         <div class="cs-offcanvas-cap flex-column border-top">
+           <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+             <i class="cxi-cart mt-n1 mr-2"></i>
+             Buy Createx
+           </a>
+         </div>
+       </div>
+ 
+ 
+       <!-- Demo switcher off-canvas toggle -->
+       <a href="#" class="cs-demo-switcher" data-toggle="offcanvas" data-target="demo-switcher">
+         <div class="cs-demo-switcher-inner" data-toggle="tooltip" data-placement="left" title="" data-original-title="Choose Demo">
+           <i class="cxi-layouts"></i>
+         </div>
+       </a>
+ 
+ 
+       <!-- Sign in modal-->
+       <div class="modal fade" id="modal-signin" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content border-0">
+ 
+             <!-- Sign in form -->
+             <div class="cs-view show" id="modal-signin-view">
+               <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                 <h3 class="modal-title mt-4 mb-0 text-center">Sign in</h3>
+                 <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                   <i class="cxi-cross" aria-hidden="true"></i>
+                 </button>
+               </div>
+               <div class="modal-body px-md-5 px-4">
+                 <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                 <form class="needs-validation" novalidate="">
+                   <div class="form-group">
+                     <label for="signin-email">Email</label>
+                     <input type="email" class="form-control" id="signin-email" placeholder="Your email address" required="">
+                   </div>
+                   <div class="form-group">
+                     <label for="signin-password" class="form-label">Password</label>
+                     <div class="cs-password-toggle input-group-overlay">
+                       <input type="password" class="form-control appended-form-control" id="signin-password" placeholder="Your password" required="">
+                       <div class="input-group-append-overlay">
+                         <label class="btn cs-password-toggle-btn input-group-text">
+                           <input type="checkbox" class="custom-control-input">
+                           <i class="cxi-eye cs-password-toggle-indicator"></i>
+                           <span class="sr-only">Show password</span>
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="d-flex justify-content-between align-items-center form-group">
+                     <div class="custom-control custom-checkbox">
+                       <input type="checkbox" class="custom-control-input" id="remember-me" checked="">
+                       <label for="remember-me" class="custom-control-label">Remember me</label>
+                     </div>
+                     <a href="#" class="font-size-sm text-decoration-none">Forgot password?</a>
+                   </div>
+                   <button type="submit" class="btn btn-primary btn-hover-shadow btn-block">Sign in</button>
+                   <p class="font-size-sm pt-4 mb-0">
+                     Don't have an account?
+                     <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signup-view">Sign up</a>
+                   </p>
+                 </form>
+               </div>
+             </div>
+ 
+             <!-- Sign up form -->
+             <div class="cs-view" id="modal-signup-view">
+               <div class="modal-header border-0 pb-0 px-md-5 px-4 d-block position-relative">
+                 <h3 class="modal-title mt-4 mb-0 text-center">Sign up</h3>
+                 <button type="button" class="close position-absolute" style="top: 1.5rem; right: 1.5rem;" data-dismiss="modal" aria-label="Close">
+                   <i class="cxi-cross" aria-hidden="true"></i>
+                 </button>
+               </div>
+               <div class="modal-body px-md-5 px-4">
+                 <p class="font-size-sm text-muted text-center">Sign in to your account using email and password provided during registration.</p>
+                 <form class="needs-validation" novalidate="">
+                   <div class="form-group">
+                     <label for="signup-name">Full name</label>
+                     <input type="text" class="form-control" id="signup-name" placeholder="Your full name" required="">
+                   </div>
+                   <div class="form-group">
+                     <label for="signup-email">Email</label>
+                     <input type="email" class="form-control" id="signup-email" placeholder="Your email address" required="">
+                   </div>
+                   <div class="form-group">
+                     <label for="signup-password" class="form-label">Password</label>
+                     <div class="cs-password-toggle input-group-overlay">
+                       <input type="password" class="form-control appended-form-control" id="signup-password" placeholder="Your password" required="">
+                       <div class="input-group-append-overlay">
+                         <label class="btn cs-password-toggle-btn input-group-text">
+                           <input type="checkbox" class="custom-control-input">
+                           <i class="cxi-eye cs-password-toggle-indicator"></i>
+                           <span class="sr-only">Show password</span>
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <label for="signup-confirm-password" class="form-label">Confirm password</label>
+                     <div class="cs-password-toggle input-group-overlay">
+                       <input type="password" class="form-control appended-form-control" id="signup-confirm-password" placeholder="Confirm your password" required="">
+                       <div class="input-group-append-overlay">
+                         <label class="btn cs-password-toggle-btn input-group-text">
+                           <input type="checkbox" class="custom-control-input">
+                           <i class="cxi-eye cs-password-toggle-indicator"></i>
+                           <span class="sr-only">Show password</span>
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                   <button class="btn btn-primary btn-hover-shadow btn-block" type="submit">Sign up</button>
+                   <p class="font-size-sm pt-4 mb-0">Already have an account?
+                     <a href="#" class="font-weight-bold text-decoration-none" data-view="#modal-signin-view">Sign in</a>
+                   </p>
+                 </form>
+               </div>
+             </div>
+             <div class="modal-body text-center px-0 pt-2 pb-4">
+               <hr>
+               <p class="font-size-sm text-heading mb-3 pt-4">Or sign in with</p>
+               <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="" data-original-title="Facebook">
+                 <i class="cxi-facebook"></i>
+               </a>
+               <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="" data-original-title="Google">
+                 <i class="cxi-google"></i>
+               </a>
+               <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="" data-original-title="Twitter">
+                 <i class="cxi-twitter"></i>
+               </a>
+               <a href="#" class="social-btn mx-1 mb-2" data-toggle="tooltip" title="" data-original-title="LinkedIn">
+                 <i class="cxi-linkedin"></i>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+ 
+ 
+       <!-- Navbar -->
+       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+       <header class="cs-header navbar navbar-expand-lg navbar-light navbar-sticky navbar-floating">
+         <div class="container px-0 px-xl-3">
+           <a class="navbar-brand order-lg-1 mr-lg-5 mr-0 pr-lg-2" href="index.html">
+             <h1 style="font-size: 30px; margin-top: 20px;">CodeFoxs</h1>
+             <!--<img src="../../assets/img/online-courses/logo-dark.svg" alt="Createx Logo" width="130">-->
+           </a>
+           <div class="d-flex align-items-center order-lg-3">
+             <a class="btn btn-gradient btn-hover-shadow d-sm-inline-block d-none ml-4" href="login.html">CodeFoxs|IDE</a>
+             <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="btn-link d-lg-inline-block d-none ml-4 text-decoration-none text-nowrap">
+               <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+               Sign in / up
+             </a>
+             <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           </div>
+           <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+             <ul class="navbar-nav mr-auto text-nowrap">
+               <li class="nav-item">
+                 <a class="nav-link" href="about.html">About us</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Courses</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="courses.html">Courses Grid</a></li>
+                   <li><a class="dropdown-item" href="course-single.html">Single Course</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Events</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="events-list.html">Events List</a></li>
+                   <li><a class="dropdown-item" href="events-grid.html">Events Grid</a></li>
+                   <li><a class="dropdown-item" href="event-single.html">Event Single</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="blog.html">Blog grid</a></li>
+                   <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="contacts.html">Contacts</a>
+               </li>
+               <li class="nav-item d-lg-none d-block">
+                 <a href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view" class="nav-link text-decoration-none">
+                   <i class="cxi-profile mt-n1 mr-2 lead align-middle"></i>
+                   Sign in / up
+                 </a>
+               </li>
+               <li class="nav-item d-sm-none d-block">
+                 <a class="btn btn-sm btn-gradient btn-hover-shadow m-3" href="contacts.html">Get consultation</a>
+               </li>
+             </ul>
+           </nav>
+         </div>
+       </header>
+ 
+ 
+       <!-- Page content-->
+       <!-- Hero-->
+       <section class="d-flex min-vh-100 mb-lg-6 mb-5 pt-lg-6 pt-5 jarallax" data-jarallax="" data-speed="0.8" style="background-color: #f9dcd4;" data-jarallax-original-styles="background-color: #f9dcd4;">
+         <div class="container d-flex flex-column justify-content-between">
+           <div class="row align-items-center h-100">
+             <div class="col-xl-5 col-md-6 order-md-1 order-2 mr-xl-auto text-md-left text-center">
+               <div class="mb-4">
+                 <a href="https://www.youtube.com/watch?v=MDNtJr_gEh0&amp;ab_channel=LibertyUniversity" class="cs-video-btn mr-3" data-gallery-video="" lg-uid="lg0"></a>
+                 <span class="font-size-sm font-weight-bold text-dark">Play Showreel</span>
+               </div>
+               <h1 class="display-2 mb-md-5 mb-3 pb-3">Welcome to easily create a website.</h1>
+               <a href="Start.html" class="btn btn-lg btn-outline-primary btn-hover-shadow mb-3 mr-sm-4 mr-2 px-md-5 px-4">About us</a>
+               <a href="login.html" class="btn btn-lg btn-gradient btn-hover-shadow mb-3 px-md-5 px-4">CodeFoxs Studio</a>
+             </div>
+             <div class="col-md-6 col-sm-10 order-md-2 order-1 mx-md-0 mx-auto mb-md-0 mb-5">
+               <img src="https://createx.vercel.app/assets/img/online-courses/home/hero/illustration.svg" alt="Illustration">
+             </div>
+           </div>
+           <div class="mb-md-5 py-4">
+             <ul class="d-md-flex d-none align-items-center justify-content-between flex-md-nowrap flex-wrap list-unstyled">
+               <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 mb-4 text-dark text-nowrap">
+                 <span class="h1 mb-lg-0 mb-1 mr-lg-2">1200</span>
+                 Students graduated
+               </li>
+               <li class="d-md-block d-none font-size-sm text-primary">•</li>
+               <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 mb-4 text-dark text-nowrap">
+                 <span class="h1 mb-lg-0 mb-1 mr-lg-2">84</span>
+                 Completed courses
+               </li>
+               <li class="d-md-block d-none font-size-sm text-primary">•</li>
+               <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 mb-4 text-dark text-nowrap">
+                 <span class="h1 mb-lg-0 mb-1 mr-lg-2">16</span>
+                 Qualified tutors
+               </li>
+               <li class="d-md-block d-none font-size-sm text-primary">•</li>
+               <li class="d-flex flex-lg-row flex-column align-items-center mb-md-0 mb-4 text-dark text-nowrap">
+                 <span class="h1 mb-lg-0 mb-1 mr-lg-2">5</span>
+                 Years of experience
+               </li>
+             </ul>
+           </div>
+         </div>
+         
+       <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="jarallax-img" style="background-image: url(&quot;../../assets/img/online-courses/home/hero/bg.png&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1089.6px; height: 754.32px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -0.16001px; transform: translate3d(0px, 0.16001px, 0px);" data-jarallax-original-styles="background-image: url(../../assets/img/online-courses/home/hero/bg.png);"></div></div></section>
+ 
+ 
+       <!-- About -->
+       <section class="pt-lg-5 pt-4 pb-lg-6 pb-5 bg-no-repeat bg-position-center bg-size-contain" style="background-image: url(../../assets/img/online-courses/home/shapes/01-about.svg);">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-7 mr-auto mb-md-0 mb-4 pb-md-0 pb-3">
+               <img src="https://createx.vercel.app/assets/img/online-courses/home/hero/illustration.svg" alt="About" class="rounded">
+             </div>
+             <div class="col-lg-4 col-md-5">
+               <h3 class="h6 mb-2 text-uppercase">CodeFoxs</h3>
+               <h2 class="h1 mb-4 pb-lg-3">Attributes?</h2>
+               <ul class="list-unstyled mb-0">
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Build a website without programming and in the shortest possible time.
+                 </li>
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Design a business card And grow your business.
+                 </li>
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Design Lego and brand In the fastest time possible.
+                 </li>
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Design your website elements.
+                 </li>
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Design anything for any purpose you have in mind.
+                 </li>
+                 <li class="d-flex mb-2 pb-1">
+                   <i class="cxi-check mt-1 mr-3 text-primary"></i>
+                   Design the interface of your applications and get the code.
+                 </li>
+               </ul>
+               <a href="Start.html" class="btn btn-gradient btn-hover-shadow mt-lg-5 mt-4">CodeFoxs|Studio</a>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+ 
+       <!-- Courses -->
+       <section class="container pt-lg-5 pt-4 pb-5">
+         <h3 class="h6 mb-2 text-uppercase">CodeFoxs</h3>
+         <div class="d-flex align-items-center justify-content-between mb-lg-5 mb-4 pb-md-2">
+           <h2 class="h1 mb-0">Other services</h2>
+           <div class="d-sm-block d-none">
+             <a href="courses.html" class="btn btn-lg btn-outline-primary btn-hover-shadow">View all courses</a>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-md-6 mb-grid-gutter">
+             <a href="https://aryia-behroziuan.github.io/codedoxs/" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+               <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/01.jpg);"></div>
+               <div class="card-body">
+                 <span class="badge badge-success mb-3 font-size-sm">CodeDoxs</span>
+                 <h5 class="card-title mb-3 py-1">Framwork Design web</h5>
+                 <div class="text-muted">
+                   <span class="font-weight-bold text-primary">$Free</span>
+                   <span class="text-border px-1">|</span>
+                   Aryia Behroziuan
+                 </div>
+               </div>
+             </a>
+           </div>
+           <div class="col-md-6 mb-grid-gutter">
+             <a href="https://aryia-behroziuan.github.io/codeflask/" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+               <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/02.jpg);"></div>
+               <div class="card-body">
+                 <span class="badge badge-info mb-3 font-size-sm">CodeFlask</span>
+                 <h5 class="card-title mb-3 py-1">Creator Code Element</h5>
+                 <div class="text-muted">
+                   <span class="font-weight-bold text-primary">$Free</span>
+                   <span class="text-border px-1">|</span>
+                   Aryia Behroziuan
+                 </div>
+               </div>
+             </a>
+           </div>
+           <div class="col-md-6 mb-grid-gutter">
+             <a href="https://aryia-behroziuan.github.io/vairal/" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+               <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/03.jpg);"></div>
+               <div class="card-body">
+                 <span class="badge badge-warning mb-3 font-size-sm">vain simulator</span>
+                 <h5 class="card-title mb-3 py-1">Simulator Vairaling</h5>
+                 <div class="text-muted">
+                   <span class="font-weight-bold text-primary">$Free</span>
+                   <span class="text-border px-1">|</span>
+                   Aryia Behroziuan
+                 </div>
+               </div>
+             </a>
+           </div>
+           <div class="col-md-6 mb-grid-gutter">
+             <a href="https://aryia-behroziuan.github.io/codeboxs/" class="card card-horizontal card-hover box-shadow cs-heading-highlight">
+               <div class="card-img-top bg-position-center-top" style="background-image: url(../../assets/img/online-courses/courses/curator/04.jpg);"></div>
+               <div class="card-body">
+                 <span class="badge badge-success mb-3 font-size-sm">CodeBoxs</span>
+                 <h5 class="card-title mb-3 py-1">IDE For Developers</h5>
+                 <div class="text-muted">
+                   <span class="font-weight-bold text-primary">$Free</span>
+                   <span class="text-border px-1">|</span>
+                   Aryia Behroziuan
+                 </div>
+               </div>
+             </a>
+           </div>
+
+
+         </div>
+         <div class="d-sm-none d-block py-3 text-center">
+           <a href="https://aryia-behroziuan.github.io/web/" class="btn btn-lg btn-outline-primary">View Web Page</a>
+         </div>
+       </section>
+ 
+
+ 
+ 
+       <!-- Events -->
+       <section class="py-lg-5 py-4 bg-faded-primary jarallax" data-jarallax="" data-speed="0.8">
+         
+         <div class="container py-4">
+           <h3 class="h6 mb-2 text-uppercase text-sm-center">Our events</h3>
+           <h2 class="h1 mb-lg-5 pb-md-2 text-sm-center">Lectures &amp; workshops</h2>
+ 
+           <!-- Card horizontal -->
+           <div class="card card-horizontal border-0 mb-4 px-sm-5">
+             <div class="card-header flex-shrink-0 my-sm-4 ml-sm-n2 py-sm-2 px-sm-0 border-0">
+               <div class="d-flex">
+                 <span class="display-4 mb-0 text-primary" style="font-size: 3rem;">05</span>
+                 <div class="ml-3 pl-1">
+                   <h6 class="h5 mb-1">August</h6>
+                   <span class="text-muted">11:00 – 14:00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body m-sm-4 py-sm-2 py-0 px-sm-3">
+               <h3 class="h5 mb-sm-1 mb-2">
+                 <a href="event-single.html" class="nav-link">Formation of the organizational structure of the company in the face of uncertainty.</a>
+               </h3>
+               <span class="text-muted">Onine master-class</span>
+             </div>
+             <div class="card-footer flex-shrink-0 my-sm-4 mt-5 mr-sm-n2 py-sm-2 px-sm-0 border-0">
+               <a href="event-single.html" class="btn btn-outline-primary btn-hover-shadow d-sm-inline-block d-block">View more</a>
+             </div>
+           </div>
+ 
+           <!-- Card horizontal -->
+           <div class="card card-horizontal border-0 mb-4 px-sm-5">
+             <div class="card-header flex-shrink-0 my-sm-4 ml-sm-n2 py-sm-2 px-sm-0 border-0">
+               <div class="d-flex">
+                 <span class="display-4 mb-0 text-primary" style="font-size: 3rem;">24</span>
+                 <div class="ml-3 pl-1">
+                   <h6 class="h5 mb-sm-1 mb-2">July</h6>
+                   <span class="text-muted">11:00 – 12:30</span>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body m-sm-4 py-sm-2 py-0 px-sm-3">
+               <h3 class="h5 mb-1">
+                 <a href="event-single.html" class="nav-link">Building a customer service department. Best Practices.</a>
+               </h3>
+               <span class="text-muted">Onine lecture</span>
+             </div>
+             <div class="card-footer flex-shrink-0 my-sm-4 mt-5 mr-sm-n2 py-sm-2 px-sm-0 border-0">
+               <a href="event-single.html" class="btn btn-outline-primary btn-hover-shadow d-sm-inline-block d-block">View more</a>
+             </div>
+           </div>
+ 
+           <!-- Card horizontal -->
+           <div class="card card-horizontal border-0 mb-4 px-sm-5">
+             <div class="card-header flex-shrink-0 my-sm-4 ml-sm-n2 py-sm-2 px-sm-0 border-0">
+               <div class="d-flex">
+                 <span class="display-4 mb-0 text-primary" style="font-size: 3rem;">16</span>
+                 <div class="ml-3 pl-1">
+                   <h6 class="h5 mb-sm-1 mb-2">July</h6>
+                   <span class="text-muted">10:00 – 13:00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="card-body m-sm-4 py-sm-2 py-0 px-sm-3">
+               <h3 class="h5 mb-1">
+                 <a href="event-single.html" class="nav-link">How to apply methods of speculative design in practice. Worldbuilding prototyping.</a>
+               </h3>
+               <span class="text-muted">Onine workshop</span>
+             </div>
+             <div class="card-footer flex-shrink-0 my-sm-4 mt-5 mr-sm-n2 py-sm-2 px-sm-0 border-0">
+               <a href="event-single.html" class="btn btn-outline-primary btn-hover-shadow d-sm-inline-block d-block">View more</a>
+             </div>
+           </div>
+           <h4 class="h3 pt-sm-4 pt-3 mb-0 text-center">
+             Do you want more?
+             <a href="events-list.html" class="btn btn-lg btn-gradient btn-hover-shadow d-sm-inline-block d-block mt-sm-0 mt-4 ml-sm-4">Explore all events</a>
+           </h4>
+         </div>
+       <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="jarallax-img" style="background-image: url(&quot;../../assets/img/online-courses/home/shapes/02-events.svg&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1089.6px; height: 835.66px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -40.83px; transform: translate3d(0px, 2588.67px, 0px);" data-jarallax-original-styles="background-image: url(../../assets/img/online-courses/home/shapes/02-events.svg);"></div></div></section>
+ 
+ 
+
+ 
+ 
+       <!-- Parallax wrapper -->
+       <div class="pt-5 bg-secondary jarallax" data-jarallax="" data-speed="0.8">
+ 
+ 
+ 
+       
+       <!-- Subscribe -->
+       <section class="py-lg-6 py-md-5 py-4 bg-faded-primary bg-no-repeat bg-position-center-bottom bg-size-contain" style="background-image: url(../../assets/img/online-courses/subscribe-bg.png);">
+         <div class="container pt-md-4 pt-3 pb-md-5 pb-4">
+           <div class="row justify-content-center">
+             <div class="col-lg-8 col-md-10">
+               <h3 class="h6 mb-2 text-uppercase text-center">Don’t miss anything</h3>
+               <h2 class="h1 mb-lg-5 pb-md-2 text-center">Subscribe to the Createx School announcements</h2>
+             </div>
+             <div class="col-lg-6 col-md-8 col-sm-10">
+               <form class="input-group">
+                 <input class="form-control rounded bg-light" type="email" placeholder="Your working email">
+                 <div class="input-group-append">
+                   <button class="btn btn-gradient btn-hover-shadow ml-md-4 ml-sm-3 ml-2 rounded" type="button">Subscribe</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+       </section>
+     </main>
+ 
+ 
+     <!-- Footer -->
+
+ 
+     <!-- Vendor scripts: js libraries and plugins-->
+     <script src="https://createx.vercel.app/assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/simplebar/dist/simplebar.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+ 
+     <!-- Main theme script-->
+     <script src="https://createx.vercel.app/assets/js/theme.min.js"></script>
+   
+ </body></html>
