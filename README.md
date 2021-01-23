@@ -20,3 +20,7 @@ According to the project engineers, this software has been freely available to a
 ## Aryia Behroziuan Creator
 Artificial intelligence and data mining programmer and specialist working on genetics and in-depth learning projects and natural language processing and computer vision And 
 born in 2007 in Iran And work as an engineer and manager of a QitSource startup development team
+
+### فارسی
+برنامه نویس و متخصص هوش مصنوعی و داده کاوی و کار در زمینه ژنتیک و پروژه های یادگیری عمیق و پردازش زبان طبیعی و دید کامپیوتر و
+متولد 2007 در ایران و به عنوان مهندس و مدیر تیم توسعه استارت آپ QitSource کار می کند
