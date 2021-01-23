@@ -26,4 +26,15 @@ born in 2007 in Iran And work as an engineer and manager of a QitSource startup 
 متولد 2007 در ایران و به عنوان مهندس و مدیر تیم توسعه استارت آپ کویت سورس کار می کند
 
 
-# Qitsource | Startup
+## Qitsource | Startup
+This startup operates in the field of bioinformatics, artificial intelligence and biotechnology and is an innovation agency for the growth and development of biotechnology technologies. The development team manager of this startup is Aryia Behroziuan
+
+### فارسی
+این استارت آپ در زمینه بیوانفورماتیک ، هوش مصنوعی و بیوتکنولوژی فعالیت می کند و یک آژانس نوآوری برای رشد و توسعه فناوری های بیوتکنولوژی است. مدیر تیم توسعه این استارت آپ اریا بهروزیان است
+
+## عربی
+تعمل هذه الشركة الناشئة في مجال المعلوماتية الحيوية والذكاء الاصطناعي والتكنولوجيا الحيوية وهي وكالة ابتكار لنمو تقنيات التكنولوجيا الحيوية وتطويرها. مدير فريق التطوير لهذه الشركة الناشئة هو اریا بهروزیان
+
+
+
+
