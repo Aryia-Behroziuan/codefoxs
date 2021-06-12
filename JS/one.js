@@ -460,15 +460,3 @@ document.getElementById('close32').addEventListener('click',
 function() {
   document.querySelector('.edit').style.display = 'none';
 });
-
-// Welcome
-document.getElementById('onewit').addEventListener('click', 
-function() {
-  document.querySelector('.welcome').style.display = 'flex';
-  document.querySelector('.theme').style.display = 'none';
-});
-
-document.getElementById('btn-welcome').addEventListener('click', 
-function() {
-  document.querySelector('.welcome').style.display = 'none';
-});
